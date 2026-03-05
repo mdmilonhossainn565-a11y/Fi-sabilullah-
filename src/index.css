@@ -1,0 +1,51 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+Bengali:wght@300;400;500;600;700&family=Amiri:wght@400;700&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&display=swap');
+
+@theme {
+  --font-sans: "Inter", "Noto Sans Bengali", ui-sans-serif, system-ui, sans-serif;
+  --font-arabic: "Amiri", serif;
+  --font-serif: "Cormorant Garamond", serif;
+  
+  --color-islamic-green: #065F46;
+  --color-islamic-gold: #B45309;
+  --color-paper: #FDFBF7;
+}
+
+body {
+  @apply bg-paper text-stone-900;
+  font-family: var(--font-sans);
+}
+
+.arabic-text {
+  font-family: var(--font-arabic);
+  direction: rtl;
+}
+
+.bengali-text {
+  font-family: "Noto Sans Bengali", sans-serif;
+}
+
+.serif-text {
+  font-family: var(--font-serif);
+}
+
+/* Glassmorphism for app-like feel */
+.glass-nav {
+  @apply bg-white/70 backdrop-blur-xl border-t border-stone-100/50;
+}
+
+/* Snappy transitions */
+.transition-snappy {
+  @apply transition-all duration-150 ease-in-out;
+}
+
+.card-shadow {
+  @apply shadow-[0_4px_20px_rgba(0,0,0,0.03)] border border-stone-100 rounded-[32px] bg-white transition-all duration-200;
+}
+
+.islamic-pattern {
+  background-image: radial-gradient(#065F46 0.5px, transparent 0.5px);
+  background-size: 24px 24px;
+  opacity: 0.05;
+}
+

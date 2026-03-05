@@ -1,0 +1,5 @@
+{
+  "name": "Fi Sabilillah Islamic App",
+  "description": "A comprehensive Islamic application for Fi Sabilillah Sangathan featuring Quran recitation, AI-powered recitation correction, prayer times, Hadith, and Islamic calendar.",
+  "requestFramePermissions": ["microphone", "geolocation"]
+}
